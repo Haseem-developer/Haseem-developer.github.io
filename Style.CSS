@@ -1,0 +1,99 @@
+body {background-color: #0e0e0e;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    font-size: 1.25vw;
+}
+
+    body > footer {background-color: rgb(255, 255, 255);
+    display: flex;    
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > ul{
+    margin-left: 12px
+}
+
+#footer-ul > div > ul > a{
+    margin-left: 12px
+    color white;
+    text-decoration: none;
+}
+
+body > main article {
+    width: 60%;
+    margin: auto ;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content >div {
+    width: 90%;
+}
+
+body> header {
+    background-color: #fcfcfc;
+    color: rgb(4, 4, 4);
+    margin: 0px 0px;}
+
+#logo {margin: 16px 152px;
+    font-family: "fredoka one", sans-serif;
+    width: 35%;
+    border-radius: 10%;}
+
+#main-header {
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+   }
+
+.navbutton {
+ color: rgb(0, 0, 0);
+ text-decoration: none;
+ padding: 12px;
+ border: 1px solid rgb(0, 0, 0);
+ border-radius: 10%;
+}
+
+   body > header > nav > ul {
+    margin: 0px 152px;
+    list-style: none;
+    text-decoration: none;
+   }
+   
+
+body > main {
+    margin: 0px 152px;
+    color: #ffffff;}
+
+
+.navbutton {
+    color: #000000;
+}
+
+form {
+    text-align: center;
+}
+
+h2 {text-align: center;}
+
+img {border-radius: 10%;}
+
+
