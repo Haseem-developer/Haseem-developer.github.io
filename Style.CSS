@@ -1,11 +1,17 @@
-body {background-color: #0e0e0e;
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
+body {
+    background-color: #000000;
+    font-family: 'Marske', Helvetica, sans-serif;
+    margin: 0;
     font-size: 1.25vw;
+    text-align: center; 
+    color: #ffffff; 
 }
 
-    body > footer {background-color: rgb(250, 250, 250);
-    display: flex;    
+body > footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
 #footer-ul {
@@ -13,87 +19,143 @@ body {background-color: #0e0e0e;
     list-style: none;
 }
 
-#footer-ul > div > ul{
-    margin-left: 12px
+#footer-ul > div > ul {
+    margin-left: 12px;
 }
 
-#footer-ul > div > ul > a{
-    margin-left: 12px
-    color white;
+#footer-ul > div > ul > a {
+    margin-left: 12px;
+    color: white;
     text-decoration: none;
 }
 
-body > main article {
-    width: 60%;
-    margin: auto ;
+
+body > main {
+    padding: 152px 0;
+    text-align: center;
+    color: white;
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
+
+body > header {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 20px;
 }
-
-#main-content >div {
-    width: 90%;
-}
-
-body> header {
-    background-color: #fcfcfc;
-    color: rgb(0, 0, 0);
-    margin: 0px 0px;}
-
-#logo {margin: 16px 152px;
-    font-family: "fredoka one", sans-serif;
-    width: 35%;
-    border-radius: 10%;}
 
 #main-header {
     display: flex;
-    height: 15vh;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 152px;
 }
+
+
+#logo {
+    font-family: 'Fauna', sans-serif;
+    font-size: 24px;
+    margin-left: 8px;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Fauna';
+    src: url('Fonts/Fauna.ttf') format('Fauna');
+}
+
+@font-face {
+    font-family: 'Marske';
+    src: url('Fonts/Marske.ttf') format('Marske');
+}
+
+#main-header img {
+    height: 40px;
+    margin-right: 8px;
+}
+
 
 #nav-ul {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    list-style: none;
 }
 
 #nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-   }
-
-.navbutton {
- color: rgb(0, 0, 0);
- text-decoration: none;
- padding: 12px;
- border: 1px solid rgb(0, 0, 0);
- border-radius: 10%;
+    margin-right: 30px;
 }
 
-   body > header > nav > ul {
-    margin: 0px 152px;
-    list-style: none;
+#nav-ul > li:last-child {
+    margin-right: 0; 
+}
+
+
+.navbutton {
+    color: #ffffff; 
     text-decoration: none;
-   }
-   
-
-body > main {
-    margin: 0px 152px;
-    color: #ffffff;}
-
-
-.navbutton {
-    color: #000000;
+    padding: 12px;
+    border-radius: 20px;
+    transition: all 0.3s;
 }
 
-form {
-    text-align: center;
+.navbutton:last-child {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255); 
+    border-bottom: 2px solid rgb(193, 223, 243); 
+    padding: 10px 20px;
 }
 
-h2 {text-align: center;}
 
-img {border-radius: 10%;}
+img {
+    margin-bottom: 16px;
+}
 
 
+body > main p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: white; /
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 120px;
+    color: white;
+}
+
+h1 {
+    font-size: 62px;
+    margin-top: 40px;
+    color: white;
+}
+
+
+body > main p.text-small {
+    font-size: 16px;
+    margin-top: 155px;
+    color: white;
+}
+
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 64px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: none; 
+    border: none;
+    border-bottom: 2px solid white; 
+    color: white; 
+    padding: 10px 0; 
+    width: 100%;
+    outline: none; 
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-bottom: 2px solid #ffff00;
+    outline: none; 
+}
