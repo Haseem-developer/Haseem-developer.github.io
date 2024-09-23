@@ -175,3 +175,12 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     text-transform: uppercase; 
     cursor: pointer;
 }
+
+    .hover-box:hover .arrow {
+        transform: translateX(10px); 
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .hover-box:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
