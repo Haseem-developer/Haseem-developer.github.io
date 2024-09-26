@@ -122,6 +122,37 @@ body > header {
     padding: 10px 20px;
 }
 
+/* Default button styling */
+.hover-box {
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-text {
+    font-size: 16px; /* Default font size for buttons */
+}
+
+/* Media Query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .hover-box {
+        padding: 12px 16px; /* Reduced padding for smaller buttons */
+    }
+
+    .button-text {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    /* If you have other text elements to adjust */
+    main div {
+        font-size: 16px; /* Example for adjusting other text size */
+    }
+}
+
+
 
 img {
     margin-bottom: 16px;
