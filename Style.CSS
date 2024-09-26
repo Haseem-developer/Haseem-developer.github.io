@@ -359,4 +359,50 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     }
 }
 
-    
+.main-image-container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the main image and text */
+}
+
+.main-responsive-image {
+    max-width: 100%; /* Ensures the main image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for panel images */
+.panel-image {
+    max-width: 100%; /* Ensure panel images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .main-responsive-image {
+        max-width: 100%; /* Make the main image full width */
+        width: 100%; /* Ensure it fills the container on mobile */
+    }
+
+    .blue-panel-container,
+    .yellow-panel-container {
+        position: relative; /* Reset positioning for mobile */
+        margin: 0 auto; /* Center the panel images */
+        display: flex; /* Allow responsive stacking if necessary */
+    }
+
+    .panel-image {
+        max-width: 100%; /* Ensure the images resize correctly */
+        width: 100%; /* Allow full width on smaller screens */
+    }
+
+    /* Additional styling adjustments for text and layout on mobile */
+    main {
+        padding: 0 16px; /* Add padding for mobile */
+        text-align: center; /* Center text on mobile */
+    }
+
+    /* Adjust font sizes for mobile */
+    main div {
+        font-size: 18px; /* Smaller font for mobile */
+    }
+}
